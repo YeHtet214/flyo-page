@@ -23,6 +23,11 @@
     min-height: 100vh;
 }
 
+section {
+    max-width: 80%;
+    margin: auto;
+}
+
 #home {
     min-height: 100vh;
     display: grid;
@@ -192,4 +197,107 @@
 
 .productive-content a span {
     opacity: 0.7;
+}
+
+#testimonial {
+    padding: 5em 0;
+}
+
+.testimonials-container {
+    padding: 2em;
+    color: var(--white);
+    display: flex;
+    gap: 3em;
+}
+
+.testimonial {
+    background-color: var(--testimonial-bg);
+    border-radius: 3px;
+    padding: 2em;
+
+}
+
+.testimonial-content {
+    margin-bottom: 1.5em;
+}
+
+.testimonial-person {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1em;
+    align-items: center;
+}
+
+.profile-picture {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-1 .profile-picture {
+    background: center / cover no-repeat url('../images/profile-1.jpg');
+    border-radius: 50%;
+}
+.testimonial-2 .profile-picture {
+    background: center / cover no-repeat url('../images/profile-2.jpg');
+    border-radius: 50%;
+}
+.testimonial-3 .profile-picture {
+    background: center / cover no-repeat url('../images/profile-3.jpg');
+    border-radius: 50%;
+}
+.profile-picture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.email-sign-up {
+    background-color: var(--sec-bg-color);
+    color: var(--white);
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px hsla(0, 3%, 27%, 0.143);
+    text-align: center;
+}
+
+.email-btn-gp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0;
+    gap: 1em;
+}
+
+.email-btn-gp input {
+    flex-grow: 1;
+    padding: 0.85em 2em;
+    border: none;
+    border-radius: 2em;
+}
+
+.email-btn-gp button {
+    border: none;
+    padding: 0.85em 2em;
+    border-radius: 2em;
+    background-color: var(--cyan);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.email-btn-gp button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #fff3; */
 }
